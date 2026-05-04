@@ -3,16 +3,19 @@ const LAB_COMPONENTS = [
   'Windows Endpoints',
   'Wazuh SIEM',
   'Microsoft Defender',
-  'DVWA',
+  'Sysmon',
+  'Kali Linux',
+  'Metasploitable',
   'Ubuntu Server',
 ]
 
 const PRACTICE_AREAS = [
-    'Active Directory enumeration and privilege escalation',
-    'Lateral movement under live AV/EDR',
-    'Kerberos abuse and Golden Ticket forging',
-    'krbtgt rotation and ticket invalidation validation',
-    'Web application vulnerabilities in enterprise context (SQLi, XSS, insecure uploads, etc.)',
+  'Active Directory enumeration and privilege escalation',
+  'Lateral movement under live AV/EDR',
+  'Kerberos abuse and Golden Ticket forging',
+  'krbtgt rotation and ticket invalidation validation',
+  'Web application vulnerabilities in enterprise context (SQLi, XSS, insecure uploads, etc.)',
+  'Vulnerability enumeration with Nessus, Nmap, and Nikto',
 ]
 
 export default function EnterpriseLab() {
@@ -26,10 +29,13 @@ export default function EnterpriseLab() {
               className="text-[11px] uppercase tracking-[0.3em] font-semibold mb-4"
               style={{ color: '#f97316' }}
             >
-              Hands‑On Environment
+              Hands&#8209;On Environment
             </h2>
             <p className="text-3xl md:text-4xl font-bold" style={{ color: 'var(--color-text-primary)' }}>
-              Enterprise Active Directory and Web Application Lab
+              Enterprise Active Directory Lab
+            </p>
+            <p className="text-sm mt-3 font-medium" style={{ color: '#f97316' }}>
+              Basis for the &ldquo;Labs Have Stakes&rdquo; Framework — NICE Conference 2026
             </p>
           </div>
 
@@ -37,9 +43,9 @@ export default function EnterpriseLab() {
             {/* Left — description + practice areas */}
             <div>
               <p className="text-sm leading-relaxed mb-6" style={{ color: 'var(--color-text-secondary)' }}>
-                An enterprise Active Directory environment built around a Windows Server domain controller, multiple endpoints (including my daily-driver), Wazuh SIEM, a Ubuntu SMB (Samba) server, and live endpoint protection.
+                A Proxmox-based enterprise Active Directory environment with a Windows Server domain controller, multiple endpoints including my daily-driver machine, Wazuh SIEM, Sysmon, and live endpoint protection. The lab is designed with real stakes: if I break something, I harm my own workflow. That consequence is the point.
               </p>
-                <br />
+              <br />
               <h3 className="text-xs uppercase tracking-widest font-semibold mb-4" style={{ color: '#f97316' }}>
                 What I Practice Here
               </h3>
@@ -60,7 +66,7 @@ export default function EnterpriseLab() {
               </p>
             </div>
 
-            {/* Right — component list (stylized "topology") */}
+            {/* Right — component list */}
             <div className="card-elevated rounded-lg p-8">
               <h3 className="text-xs uppercase tracking-widest font-semibold mb-6" style={{ color: '#f97316' }}>
                 Lab Stack

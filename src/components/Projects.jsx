@@ -2,16 +2,26 @@ import { useEffect, useRef, useState } from 'react'
 
 const PROJECTS = [
   {
+    title: 'RedHacks AI Red Team CTF',
+    subtitle: 'BU Cybersecurity Association · April 2026 · Boston, MA',
+    award: "BU's First LLM Red Team CTF",
+    bullets: [
+      'Designed and co-organized BU\'s first LLM red team CTF; authored five rounds targeting prompt injection, tool call exploitation, and agent manipulation',
+      'Developed novel attack techniques including language-mixing with cognitive load misdirection and definition trap prompts',
+      'Debut event drew 24 sign-ups',
+    ],
+    link: null,
+  },
+  {
     title: 'SafeContractor',
-    subtitle: 'Civic Tech Hackathon @ BU 2025',
+    subtitle: 'Civic Tech Hackathon · February 2025 · Boston, MA',
     award: 'Won Best Overall + Best Scam Protection',
     bullets: [
-      'Led frontend development in React + TypeScript, designing and implementing a responsive search interface for 70k+ contractor records',
-      'Integrated backend APIs into a clean, user-facing verification workflow',
-      'Collaborated closely with backend engineers to shape API responses and UI constraints under hackathon time pressure',
-      'Helped deliver an AI-enhanced credential summary system to reduce contractor fraud risk',
+      'Engineered React and FastAPI platform integrating MariaDB, SQLAlchemy, and OpenAI; scraped 70K+ contractor license records from Massachusetts public records',
+      'Indexed 1.5M+ database rows with optimized SQL keys for performance; implemented elastic search so residents can find contractors without exact name matches',
+      'Generated AI-driven contractor credential summaries to help Boston residents verify contractors and avoid fraud',
     ],
-    link: 'https://devpost.com/software/safe-contractors', // placeholder — replace with real URL
+    link: 'https://devpost.com/software/safe-contractors',
   },
 ]
 
@@ -39,8 +49,8 @@ export default function Projects() {
 
   return (
     <>
-      <section 
-        id="projects" 
+      <section
+        id="projects"
         ref={sectionRef}
         className="py-16 px-8 md:px-16 lg:px-24"
       >
@@ -66,8 +76,8 @@ export default function Projects() {
                 style={{
                   opacity: isVisible ? 1 : 0,
                   transform: isVisible ? 'none' : 'translateY(20px)',
-                  transition: isVisible 
-                    ? `opacity 0.8s ease-out ${index * 0.4}s, transform 0.8s ease-out ${index * 0.4}s` 
+                  transition: isVisible
+                    ? `opacity 0.8s ease-out ${index * 0.4}s, transform 0.8s ease-out ${index * 0.4}s`
                     : 'opacity 0.6s ease-out, transform 0.6s ease-out'
                 }}
                 onTransitionEnd={(e) => {
@@ -101,7 +111,7 @@ export default function Projects() {
                     </li>
                   ))}
                 </ul>
-                 <br />
+                <br />
                 {item.link && (
                   <a
                     href={item.link}

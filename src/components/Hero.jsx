@@ -15,7 +15,7 @@ export default function Hero() {
             style={{ animationDelay: '0.15s', color: 'var(--color-accent)' }}
             className="text-[11px] uppercase tracking-[0.25em] font-medium mb-8"
           >
-            Cybersecurity Practitioner &middot; Adversary Simulation &middot; Human&#8209;Layer Defense
+            Cybersecurity Practitioner &middot; Human&#8209;Layer Security &middot; Behavioral Risk
           </p>
 
           {/* Headline */}
@@ -24,7 +24,7 @@ export default function Hero() {
             style={{ animationDelay: '0.3s' }}
             className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-[var(--color-text-primary)]"
           >
-            I study attacker TTPs and translate them into practical defenses.
+            Security fails at the human layer. I build frameworks that don&rsquo;t.
           </h1>
 
           {/* Supporting text */}
@@ -33,7 +33,7 @@ export default function Hero() {
             style={{ animationDelay: '0.5s' }}
             className="mt-6 text-base md:text-lg leading-relaxed max-w-2xl text-[var(--color-text-secondary)]"
           >
-            SecureWorld speaker (Financial Services 2025). Creator of the Dissonance Test. Red team ops and security consulting.
+            RSAC 2026 Session Host. Creator of the Dissonance Test and the Deception Disruption Framework. SecureWorld, NICE, and Layer 8 Speaker. PNPT certified.
           </p>
 
           {/* CTAs */}

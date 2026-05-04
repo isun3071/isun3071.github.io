@@ -28,14 +28,14 @@ export default function About() {
             </h3>
             <br />
 
-            <div className="space-y-4 text-sm leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>                    
-                <p>I’m a cybersecurity practitioner and Computer Science student at Boston University (BA/MS). My work centers on adversary simulation and the human layer of security.</p>
-                <br />
-                <p>In 2025, I presented the Dissonance Test at SecureWorld Financial Services, a behavioral hiring control designed to surface deception before access is granted. Its purpose is simple: move workforce risk mitigation upstream, before credentials are issued.</p>
-                <br />  
-                <p>I build and operate enterprise-style lab environments centered on Windows Server and Active Directory. I test offensive techniques including enumeration, lateral movement, Kerberos abuse, and web application vulnerabilities against live defenses with AV and EDR enabled, then harden and validate remediations.</p>
-                <br />
-                <p>Alongside lab research, I support production IT systems at a 30,000+ student university and previously at a managed service provider, gaining exposure to infrastructure and operational risk at scale.</p>
+            <div className="space-y-4 text-sm leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>
+              <p>I&rsquo;m a cybersecurity practitioner and framework developer focused on human-layer security and behavioral risk. My work sits at the intersection of how people deceive, how organizations verify, and what controls actually work before credentials are issued.</p>
+              <br />
+              <p>In 2025 I introduced the Dissonance Test at SecureWorld Financial Services, a behavioral hiring control that converts threat intelligence on workforce infiltration into deployable mitigations for hiring, onboarding, and access review. In April 2026 I returned to SecureWorld Boston with &ldquo;Workforce Identity in the Age of Remote Deception,&rdquo; introducing the bounded vs. unbounded deception lens for understanding why some candidates bypass every gate via the stake differential.</p>
+              <br />
+              <p>In June 2026 I debut the Deception Disruption Framework (DDF) at Layer 8 and co-present &ldquo;When Labs Have Stakes&rdquo; with Dr. Faisal Abdullah at the NICE Conference. Earlier this year I served as a session host at RSAC 2026, one of roughly 70 selected from 40,000+ attendees.</p>
+              <br />
+              <p>Alongside research and conference work, I build and operate enterprise lab environments with real stakes, support production IT systems at a 30,000+ student university, and previously interned at a regional MSP serving 40+ enterprise clients. I hold the PNPT, CompTIA Network+, Security+, and ISC&sup2; CC certifications.</p>
             </div>
 
             <div className="mt-6 pt-6" style={{ borderTop: '1px solid var(--color-border)' }}>
@@ -43,7 +43,7 @@ export default function About() {
                 Looking for
               </p>
               <p className="text-sm" style={{ color: 'var(--color-text-secondary)' }}>
-                Red team and security consulting roles
+                Human-layer security research, CISO office strategy, and security consulting roles
               </p>
             </div>
           </div>

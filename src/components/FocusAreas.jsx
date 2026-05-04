@@ -2,11 +2,11 @@ import { useEffect, useRef, useState } from 'react'
 
 const FOCUS_AREAS = [
   {
-    title: 'Adversary Simulation',
+    title: 'Offensive Security',
     bullets: [
-        "Operate an enterprise-style Active Directory lab (domain controller, endpoints, real daily driver)",
-        "Execute real offensive techniques: enumeration, lateral movement, Kerberos abuse, web exploitation",
-        "Keep defenses live (Defender, AV, Sysmon, Wazuh) and validate detection + hardening through repeated attack cycles"
+      'Operate a Proxmox-based Active Directory lab with real stakes: domain-joined daily driver, live AV/EDR, Wazuh SIEM, and Sysmon',
+      'Execute real attack chains: AD enumeration, lateral movement, Kerberos ticket abuse, credential harvesting, and web app exploitation',
+      'Validate detection and hardening by testing attacks against live endpoint protection and implementing remediations like krbtgt rotation',
     ],
     icon: (
       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -15,11 +15,11 @@ const FOCUS_AREAS = [
     ),
   },
   {
-    title: 'Human‑Layer Defense',
+    title: 'Human‑Layer Security',
     bullets: [
-      "Creator of the Dissonance Test, a behavioral control that surfaces deception before credentials are issued",
-      "Uses open-ended questioning to trigger cognitive dissonance in deceptive actors while leaving real actors mostly unaffected",
-      "Designed to be universal and usable without specialized behavioral training"
+      'Creator of the Dissonance Test, a behavioral hiring control that surfaces deception before credentials are issued, and the Deception Disruption Framework (DDF) for real-time social engineering detection',
+      'Developed the bounded vs. unbounded deception taxonomy to explain why some actors bypass every hiring gate via the stake differential',
+      'Speaker at SecureWorld, NICE Conference, and Layer 8 on workforce identity risk, insider threat detection, and training realism',
     ],
     icon: (
       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -30,9 +30,9 @@ const FOCUS_AREAS = [
   {
     title: 'Practical Security Controls',
     bullets: [
-      "Take threat intelligence on APTs, social engineering, etc. and convert it into everyday workflow mitigations",
-      "Build hiring-gate and onboarding checks that integrate with access review and operational processes",
-      "Emphasize low-cost controls that scale beyond technical mitigations"
+      'Convert threat intelligence on nation-state actors, social engineering campaigns, and workforce infiltration into deployable hiring-gate and onboarding controls',
+      'Design interventions that embed security judgment into the points where trust and access are actually granted, before tools and credentials enter the picture',
+      'Emphasize low-cost, scalable mitigations that work in organizations without dedicated security culture programs',
     ],
     icon: (
       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -66,9 +66,9 @@ export default function FocusAreas() {
 
   return (
     <>
-      <section 
-        ref={sectionRef} 
-        className="py-16 px-8 md:px-16 lg:px-24" 
+      <section
+        ref={sectionRef}
+        className="py-16 px-8 md:px-16 lg:px-24"
         style={{ backgroundColor: 'rgba(15, 23, 42, 0.5)' }}
       >
         <div className="w-full max-w-5xl mx-auto">
@@ -93,8 +93,8 @@ export default function FocusAreas() {
                 style={{
                   opacity: isVisible ? 1 : 0,
                   transform: isVisible ? 'none' : 'translateY(20px)',
-                  transition: isVisible 
-                    ? `opacity 0.8s ease-out ${index * 0.4}s, transform 0.8s ease-out ${index * 0.4}s` 
+                  transition: isVisible
+                    ? `opacity 0.8s ease-out ${index * 0.4}s, transform 0.8s ease-out ${index * 0.4}s`
                     : 'opacity 0.6s ease-out, transform 0.6s ease-out'
                 }}
                 onTransitionEnd={(e) => {

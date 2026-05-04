@@ -1,7 +1,7 @@
 const SIGNALS = [
-  'SecureWorld Speaker',
-  'PNPT In Progress',
-  '3+ Yrs Infrastructure & IT Ops',
+  'RSAC 2026 Session Host',
+  'PNPT Certified',
+  'SecureWorld · NICE · Layer 8 Speaker',
   'CompTIA Net+ / Sec+ / ISC² CC',
 ]
 
