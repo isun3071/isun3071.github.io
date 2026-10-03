@@ -3,7 +3,7 @@ import { contact } from '../content.js'
 // The line for what Ian is looking for goes under the heading once he writes it.
 export default function Contact() {
   return (
-    <footer id="contact" className="section contact" aria-labelledby="contact-title">
+    <section id="contact" className="section" aria-labelledby="contact-title">
       <h2 id="contact-title">Contact</h2>
       <ul className="contact-links">
         {contact.map(({ label, href, text }) => (
@@ -13,6 +13,6 @@ export default function Contact() {
           </li>
         ))}
       </ul>
-    </footer>
+    </section>
   )
 }

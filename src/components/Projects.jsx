@@ -29,12 +29,16 @@ function ProjectCard({ name, tags, line, figure, link, caseStudy }) {
     <li className="card" data-tags={tags.join(' ')}>
       <h3>{name}</h3>
       <p className="card-line">{line}</p>
-      {figure && <Figure {...figure} />}
-      {link && (
-        <a className="card-link" href={link.href}>
-          {link.text}
-          <span aria-hidden="true"> ↗</span>
-        </a>
+      {(figure || link) && (
+        <div className="card-foot">
+          {figure && <Figure {...figure} />}
+          {link && (
+            <a className="card-link" href={link.href}>
+              {link.text}
+              <span aria-hidden="true"> ↗</span>
+            </a>
+          )}
+        </div>
       )}
       {caseStudy && (
         <details className="case-study">

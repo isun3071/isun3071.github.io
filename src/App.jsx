@@ -2,7 +2,7 @@ import Hero from './components/Hero'
 import Projects from './components/Projects'
 import Frameworks from './components/Frameworks'
 import Talks from './components/Talks'
-import Background from './components/Background'
+import { Education, Experience } from './components/Background'
 import Contact from './components/Contact'
 
 export default function App() {
@@ -13,10 +13,15 @@ export default function App() {
       <main>
         <Projects />
         <Frameworks />
-        <Talks />
-        <Background />
+        <div className="split">
+          <Talks />
+          <Experience />
+        </div>
+        <div className="split">
+          <Education />
+          <Contact />
+        </div>
       </main>
-      <Contact />
     </>
   )
 }
