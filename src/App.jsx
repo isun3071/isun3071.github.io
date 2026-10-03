@@ -1,24 +1,37 @@
-import './App.css'
 import Hero from './components/Hero'
-import StatsBar from './components/StatsBar'
-import About from './components/About'
-import FocusAreas from './components/FocusAreas'
-import EnterpriseLab from './components/EnterpriseLab'
-import Research from './components/Research'
 import Projects from './components/Projects'
-import Footer from './components/Footer'
+import Frameworks from './components/Frameworks'
+import Talks from './components/Talks'
+import Background from './components/Background'
+import Contact from './components/Contact'
 
 export default function App() {
   return (
-    <main className="min-h-screen font-sans overflow-x-hidden" style={{ backgroundColor: 'var(--color-bg-primary)', color: 'var(--color-text-secondary)' }}>
+    <>
+      <ThemeToggle />
       <Hero />
-      <StatsBar />
-      <About />
-      <FocusAreas />
-      <EnterpriseLab />
-      <Research />
-      <Projects />
-      <Footer />
-    </main>
+      <main>
+        <Projects />
+        <Frameworks />
+        <Talks />
+        <Background />
+      </main>
+      <Contact />
+    </>
+  )
+}
+
+// main.js sets aria-pressed from the active theme and saves the choice.
+function ThemeToggle() {
+  return (
+    <button type="button" className="theme-toggle" aria-label="Dark theme" aria-pressed="false" data-theme-toggle="">
+      <svg className="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" />
+      </svg>
+      <svg className="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="4" />
+        <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+      </svg>
+    </button>
   )
 }
