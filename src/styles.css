@@ -1,14 +1,14 @@
 /* Theme tokens. Light is the base; dark applies from the system setting or the toggle. */
 :root {
-  --bg: #f3f1ec;
-  --surface: #fbfaf7;
-  --line: #d6d1c8;
-  --text: #121212;
-  --muted: #55524c;
+  --bg: #f2f2f2;
+  --surface: #ffffff;
+  --line: #d2d2d2;
+  --text: #111111;
+  --muted: #525252;
   --accent: #c8102e;
   --accent-ink: #ffffff;
-  --dot: rgba(18, 18, 18, 0.2);
-  --redact: #121212;
+  --dot: rgba(17, 17, 17, 0.2);
+  --redact: #111111;
   --display: 'Archivo', ui-sans-serif, system-ui, sans-serif;
   --body: 'Inter', ui-sans-serif, system-ui, sans-serif;
   --mono: 'JetBrains Mono', ui-monospace, monospace;
@@ -201,7 +201,7 @@ html:not(.js) .theme-toggle,
 
 .hero-grid {
   background-image: radial-gradient(circle, var(--dot) 1.1px, transparent 1.6px);
-  background-size: 28px 28px;
+  background-size: 32px 32px;
 }
 
 .hero-canvas {
@@ -299,7 +299,7 @@ html:not(.js) .theme-toggle,
 }
 
 .hero h1 {
-  font-size: clamp(4.5rem, 28vw, 15rem);
+  font-size: clamp(3.5rem, 15vw, 9rem);
   font-weight: 800;
   font-stretch: 75%;
   line-height: 0.86;

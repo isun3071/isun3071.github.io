@@ -26,7 +26,7 @@ function initTheme() {
   const sync = () => {
     const dark = active() === 'dark'
     toggle.setAttribute('aria-pressed', String(dark))
-    themeColor.content = dark ? '#0a0a0b' : '#f3f1ec'
+    themeColor.content = dark ? '#0a0a0b' : '#f2f2f2'
     hero.readColors()
   }
 
@@ -57,7 +57,7 @@ function createHero(heroEl) {
   const terms = [...heroEl.querySelectorAll('.hero-terms li')].map((el) => ({ el, text: el.textContent, y: null }))
   const ctx = canvas.getContext('2d')
 
-  const GAP = 28
+  const GAP = 32
   const DRIFT = 5 // px per second, diagonal
   const SWEEP = 7000 // ms per pass of the scan line
   const TRAIL = 1.1 // seconds a dot stays lit after the line passes it
