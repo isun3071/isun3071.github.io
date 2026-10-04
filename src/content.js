@@ -49,6 +49,7 @@ export const projects = [
     name: 'RedHacks',
     tags: ['security', 'ai'],
     line: "Boston University's first LLM red team competition, returning in fall 2026.",
+    link: { href: 'https://redhacks1.vercel.app/', text: 'April 2026 debrief' },
   },
   {
     name: 'Vibe Mill',
