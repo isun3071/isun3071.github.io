@@ -38,11 +38,12 @@ export const projects = [
     name: 'Lean autograder for CS131',
     tags: ['teaching'],
     line: 'Credits any correct proof and catches banned steps hidden in helper lemmas.',
+    link: { href: 'https://github.com/isun3071/lean-4-teaching', text: 'GitHub' },
     caseStudy: [
       'CS131 students write their proofs in Lean. The autograder credits any proof Lean accepts for the stated theorem, so a correct answer earns its points even when it differs from the reference.',
       'Each problem sets which tactics and theorems are allowed. The grader traces every dependency of a submission, so a banned step inside a helper lemma is caught the same way as one in the main proof.',
       'Grading used to time out after more than an hour. It now finishes in about a minute.',
-      'The autograder grades the course for real points. The repository is private.',
+      'The autograder grades the course for real points.',
     ],
   },
   {
